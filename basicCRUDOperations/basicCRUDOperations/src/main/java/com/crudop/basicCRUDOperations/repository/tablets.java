@@ -1,4 +1,4 @@
-package com.crud.CRUDoperations.repository;
+package com.crudop.basicCRUDOperations.repository;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -11,6 +11,9 @@ public class tablets {
 	String name;
 	Integer price;
 	String weight;
+	public tablets() {
+		
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -48,3 +51,4 @@ public class tablets {
 	}
 	
 }
+

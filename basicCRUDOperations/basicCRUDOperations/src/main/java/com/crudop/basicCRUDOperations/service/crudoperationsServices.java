@@ -1,12 +1,13 @@
-package com.crud.CRUDoperations.service;
+package com.crudop.basicCRUDOperations.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.crud.CRUDoperations.CruDoperationsApplication;
-import com.crud.CRUDoperations.repository.tabletrepository;
-import com.crud.CRUDoperations.repository.tablets;
+
+import com.crudop.basicCRUDOperations.repository.tabletrepository;
+import com.crudop.basicCRUDOperations.repository.tablets;
+
 
 @Service
 public class crudoperationsServices {
@@ -28,6 +29,7 @@ public class crudoperationsServices {
 	public void insertdata(tablets tablet) {
 		try {
 			repo.save(tablet);
+			System.out.println("DATA INSERTED SUCCESSFULLY");
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("INVALID DATA");
@@ -52,3 +54,4 @@ public class crudoperationsServices {
 		}
 	}
 }
+
