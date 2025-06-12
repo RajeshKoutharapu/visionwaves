@@ -1,10 +1,10 @@
-package com.crudop.basicCRUDOperations;
+package com.crudapi.CRUDAPI;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BasicCrudOperationsApplicationTests {
+class CrudapiApplicationTests {
 
 	@Test
 	void contextLoads() {
